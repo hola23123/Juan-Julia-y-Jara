@@ -8,4 +8,4 @@ dioooos
 
 bien jaraaa
 
-primero escribo algo en el scrip, luego lo guardo, luego le doy a commit y selecciono lo que quiero, commit, oush
+primero escribo algo en el scrip, luego lo guardo, luego le doy a commit y selecciono lo que quiero, commit, push
