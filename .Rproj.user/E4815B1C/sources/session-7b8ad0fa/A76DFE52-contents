@@ -1,0 +1,33 @@
+---
+title: "Practica conjunta Las tres J"
+author: "Jara, Juan, Julia"
+date: "2024-05-08"
+output: html_document
+---
+
+## Práctica conjunta RMarkdown
+
+En esta práctica necesitamos crear un nuevo repositorio en Github, después compartirla con nuestros compañeros de grupo de trabajo y volver a subirlo como un commitment.
+
+Además de escribir texto normal, podemos escribir código:
+
+library(ggplot2)
+
+head(penguins)
+
+```{r cars}
+summary(cars)
+library(ggplot2)
+
+
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

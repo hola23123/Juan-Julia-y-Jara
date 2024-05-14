@@ -1,0 +1,31 @@
+##Práctica 13 
+##Julia Martínez Alonso
+
+pisa <- read_sav("PISA22SP.sav")
+factores <- c("region", "estrato", "genero", "meduc", 
+              "peduc", "heduc")
+pisa[, factores] <- as_factor(pisa[,factores]
+) |> droplevels()
+summary(pisa)
+library(dplyr)
+
+#install.packages("beeswarm")
+library(beeswarm)
+
+sample_pisa <- pisa %>% dplyr::sample_n(size = 500)
+beeswarm(sample_mates$mates)
+
+beeswarm(sample_pisa$lectu)
+
+library(ggridges)
+library(ggplot2)
+
+datos <- pisa %>% c("mates", "lectu", "cienc")
+
+heatmap(datos)
+
+library(tidyverse)
+ggplot (sample_pisa, aes (x = meduc, y = mates)) +
+  geom_hex() +
+  theme_bw()
+1
