@@ -2,7 +2,7 @@ library(readxl)
 library(dplyr)
 library(haven)
 
-#Lista de variables y explicaciones
+#Lista de variables y explicacioness
 lista_variables <- read_excel("/Users/juan/Desktop/SOCIOLOGIA 3*/DATA SCIENCE/RStudio/Practica 15-16/cis3145_VarList.xlsx")
 
 #Datos de spss
