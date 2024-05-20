@@ -22,3 +22,5 @@ model <- lm(edad ~ sexo + esta + ideopp, data = datos_regresion)
 
 # Resumen del modelo
 summary(model)
+
+#prueba
