@@ -10,15 +10,15 @@ data <- read_sav("/Users/juan/Desktop/SOCIOLOGIA 3*/DATA SCIENCE/RStudio/Practic
 
 # Selección de variables
 datos_regresion <- data %>%
-  select(edad, sexo, esta, ideopp)
+  select(edad, genero, status)
 
 # Convertir las variables categóricas a factores
-datos_regresion$sexo <- as.factor(datos_regresion$sexo)
-datos_regresion$esta <- as.factor(datos_regresion$esta)
+datos_regresion$sexo <- as.factor(datos_regresion$genero)
+datos_regresion$esta <- as.factor(datos_regresion$status)
 datos_regresion$ideopp <- as.factor(datos_regresion$ideopp)
 
 # Modelo de regresión lineal múltiple
-model <- lm(edad ~ sexo + esta + ideopp, data = datos_regresion)
+model <- lm(edad ~ genero + status, data = datos_regresion)
 
 # Resumen del modelo
 summary(model)
