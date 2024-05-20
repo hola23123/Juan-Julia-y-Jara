@@ -26,5 +26,6 @@ model <- lm(edad ~ sexo + esta + ideopp, data = datos_regresion)
 summary(model)
 
 
+Probando 123324
 
 
