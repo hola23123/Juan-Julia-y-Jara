@@ -51,26 +51,26 @@ summary(modelo)
 
 # Resultados
 
-Intercepto (44.147): Representa la edad promedio de los individuos en el grupo de referencia (por ejemplo, hombres con el estatus socioeconómico más bajo y la menor ubicación ideológica en relación al PP).
+**Intercepto (44.147):** Representa la edad promedio de los individuos en el grupo de referencia (por ejemplo, hombres con el estatus socioeconómico más bajo y la menor ubicación ideológica en relación al PP).
 
-sexo2 (2.805): Las muejeres son 2.805 años mayores que los hombres, manteniendo todas las demás variables constantes. Este resultado es altamente significativo (p \< 0.001), lo que sugiere una diferencia de edad notable entre géneros en esta muestra.
+**sexo2 (2.805):** Las muejeres son 2.805 años mayores que los hombres, manteniendo todas las demás variables constantes. Este resultado es altamente significativo (p \< 0.001), lo que sugiere una diferencia de edad notable entre géneros en esta muestra.
 
-esta2 (0.108): Este coeficiente no es significativo (p = 0.8795), lo que sugiere que no hay una diferencia estadísticamente significativa en la edad entre los individuos con estatus socioeconómico 2 en comparación con el grupo de referencia.
+**esta2 (0.108):** Este coeficiente no es significativo (p = 0.8795), lo que sugiere que no hay una diferencia estadísticamente significativa en la edad entre los individuos con estatus socioeconómico 2 en comparación con el grupo de referencia.
 
-esta3 (10.337): Los individuos con estatus socioeconómico 3 son en promedio 10.337 años mayores que el grupo de referencia. Este resultado es altamente significativo (p \< 0.001), indicando una fuerte relación entre el estatus socioeconómico y la edad.
+**esta3 (10.337):** Los individuos con estatus socioeconómico 3 son en promedio 10.337 años mayores que el grupo de referencia. Este resultado es altamente significativo (p \< 0.001), indicando una fuerte relación entre el estatus socioeconómico y la edad.
 
-esta4 (5.651): Los individuos con estatus socioeconómico 3 son en promedio 5.651 años mayores que el grupo de referencia. Este resultado es altamente significativo (p \< 0.001).
+**esta4 (5.651):** Los individuos con estatus socioeconómico 3 son en promedio 5.651 años mayores que el grupo de referencia. Este resultado es altamente significativo (p \< 0.001).
 
-esta5 (3.573): Los individuos con estatus socioeconómico 5 son en promedio 3.573 años mayores que el grupo de referencia. Este resultado es altamente significativo (p \< 0.001).
+**esta5 (3.573):** Los individuos con estatus socioeconómico 5 son en promedio 3.573 años mayores que el grupo de referencia. Este resultado es altamente significativo (p \< 0.001).
 
-esta9 (2.439): Los individuos con estatus socioeconómico 9 son en promedio 2.439 años mayores que el grupo de referencia. Este resultado es marginalmente significativo (p = 0.0858).
+**esta9 (2.439):** Los individuos con estatus socioeconómico 9 son en promedio 2.439 años mayores que el grupo de referencia. Este resultado es marginalmente significativo (p = 0.0858).
 
-ideopp (0.031): Este coeficiente indica que por cada unidad adicional en la escala de ubicación ideológica en relación al Partido Popular (PP), la edad promedio aumenta en 0.031 años. Este resultado es significativo (p \< 0.001), aunque el efecto es relativamente pequeño.
+**ideopp (0.031):** Este coeficiente indica que por cada unidad adicional en la escala de ubicación ideológica en relación al Partido Popular (PP), la edad promedio aumenta en 0.031 años. Este resultado es significativo (p \< 0.001), aunque el efecto es relativamente pequeño.
 
-Estadísticos del Modelo Errores Estándar de los Residuales (17.54): Esto indica que, en promedio, las predicciones del modelo están desviadas de los valores reales de la edad por aproximadamente 17.54 años.
+**Estadísticos del Modelo Errores Estándar de los Residuales (17.54):** Esto indica que, en promedio, las predicciones del modelo están desviadas de los valores reales de la edad por aproximadamente 17.54 años.
 
-R-cuadrado (0.04748): Este valor indica que aproximadamente el 4.75% de la variabilidad en la edad puede ser explicada por las variables independientes en el modelo. Aunque es significativo, sugiere que la mayor parte de la variabilidad en la edad se debe a otros factores no incluidos en el modelo.
+**R-cuadrado (0.04748)**
 
-R-cuadrado Ajustado (0.0464): Este valor es ligeramente inferior al R-cuadrado, ajustando el número de variables en el modelo.
+**R-cuadrado Ajustado (0.0464):** Este valor indica que aproximadamente el 4.64% de la variabilidad en la edad puede ser explicada por las variables independientes en el modelo., lo que sugiere que la mayor parte de la variabilidad en la edad se debe a otros factores no incluidos en el modelo.
 
-F-Statistic (43.91): El valor de F-Statistic y su p-value (\< 2.2e-16) sugieren que el modelo en su conjunto es significativo, lo que significa que las variables independientes seleccionadas, en conjunto, explican una cantidad significativa de la variabilidad en la edad.
+**F-Statistic (43.91): El valor de F-Statistic y su p-value (\< 2.2e-16)** sugieren que el modelo en su conjunto es significativo.
