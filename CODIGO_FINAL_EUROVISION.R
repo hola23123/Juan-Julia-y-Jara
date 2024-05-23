@@ -65,6 +65,9 @@ for (link in urls) {
   }
 }
 
+#DESCARGAR ALL_DATA
+write_excel_csv(all_data, "all_data_Raw.xlsx")
+
 #LIMPIA VARRIABLES CON NA O EQUIVOCADOS AL SACAR
 clean_data <- all_data %>%
   filter(Post != "", 
