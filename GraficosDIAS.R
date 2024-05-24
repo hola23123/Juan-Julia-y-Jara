@@ -3,7 +3,6 @@ library(readxl)
 library(lubridate)
 library(ggplot2)
 
-#CARGAR LOS DATOS
 clean_data <- read_excel("ForoData.xlsx")
 
 #CREAR UNA COLUMNA CON SOLO LA FECHA

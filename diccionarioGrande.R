@@ -63,16 +63,17 @@ for (categoria in names(diccionario)) {
 
 #COMBINAR DATAFRAMES Y QUE SE VEA BIEN
 RESULTADO <- bind_rows(
-  frecuencias_df %>% mutate(Palabra = Categoria, Frecuencia_Detalle = Frecuencia, Categoria = ""),
-  detalle_palabras_df %>% rename(Frecuencia_Detalle = Frecuencia)
+  frecuencias_df %>% mutate(Palabra = Categoria, Frecuencia_palabras = Frecuencia, Categoria = ""),
+  detalle_palabras_df %>% rename(Frecuencia_palabras = Frecuencia)
 ) %>%
-  arrange(Categoria, desc(Frecuencia_Detalle)) %>%
-  select(Categoria, Palabra, Frecuencia_Detalle)
+  arrange(Categoria, desc(Frecuencia_palabras)) %>%
+  select(Categoria, Palabra, Frecuencia_palabras)
 colnames(combined_df) <- c("Categoria", "Palabra/Frecuencia", "Frecuencia")
 
 #RESULTADO FINAL
 print(RESULTADO)
 
-
+#GUARDAR EN XLSX
+write.xlsx(RESULTADO, "Diccionario.xlsx")
 
 
