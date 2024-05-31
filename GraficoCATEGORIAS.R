@@ -8,7 +8,7 @@ categorias_principales <- resultado %>%
   filter(Categoria != "")
 
 #GRAFICA CON GGPLOT
-ggplot(categorias_principales, aes(x = reorder(Categoria, -Frecuencia_Detalle), y = Frecuencia_Detalle)) +
+ggplot(categorias_principales, aes(x = reorder(Categoria, -Frecuencia), y = Frecuencia)) +
   geom_bar(stat = "identity", fill = "steelblue") +
   labs(title = "Frecuencia de Categorías",
        x = "Categoría",
