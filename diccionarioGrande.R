@@ -4,11 +4,11 @@ library(glue)
 library(xlsx)
 library(readxl)
 library(stringr)
-
+library(writexl)
 #BASE DE DATOS
 clean_data <- read_excel("ForoData.xlsx")
 
-#DICCIONARIO DE PRUEBA
+#DICCIONARIO DE PRUEBA, AL CAMBIARLO CAMBIARLO EN EL OTRO SCRIPT
 diccionario <- list(
   politica = c("Israel", "gobierno", "elección", "terroristas", "Netanhayu"),
   machismo = c("machismo", "misoginia", "sexismo"),
@@ -18,6 +18,8 @@ diccionario <- list(
   sexualizacionNoInsulto = c("sexy", "caliente", "atractivo", "atractiva", "atractivos", "atractivas", "guapo", "guapa", "guapos", "guapas", "buenorro", "buenorra", "buenorros", "buenorras", "macizo", "maciza", "macizos", "macizas"),
   sexualizacionInsulto = c("puta", "zorra", "perra", "prostituta", "ramera", "furcia", "meretriz", "buscona", "busconas", "buscones")
 )
+
+
 #FUNCION PALABRAS POR CATEGORIA
 contar_palabras_por_categoria <- function(df, diccionario) {
   frecuencias <- lapply(diccionario, function(palabras) {
@@ -68,7 +70,7 @@ RESULTADO <- bind_rows(
 ) %>%
   arrange(Categoria, desc(Frecuencia_palabras)) %>%
   select(Categoria, Palabra, Frecuencia_palabras)
-colnames(combined_df) <- c("Categoria", "Palabra/Frecuencia", "Frecuencia")
+colnames(RESULTADO) <- c("Categoria", "Palabra/Frecuencia", "Frecuencia")
 
 #RESULTADO FINAL
 print(RESULTADO)
