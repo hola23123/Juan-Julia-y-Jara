@@ -7,7 +7,11 @@ clean_data <- read_excel("ForoData.xlsx")
 
 #CREAR UNA COLUMNA CON SOLO LA FECHA
 clean_data <- clean_data %>%
-  mutate(Only_Date = as.Date(Date, format="%d-%b-%Y"))
+  mutate(Only_Date = case_when(
+    str_detect(Date, "^\\d{2}-\\w{3}-\\d{4}") ~ dmy(substr(Date, 1, 11)),
+    str_detect(Date, "^\\d{4}-\\d{2}-\\d{2}") ~ ymd(substr(Date, 1, 10)),
+    TRUE ~ as.Date(NA)
+  ))
 
 #CONTAR LOS MENSAJES POR DIA SEGUN LA COLUMNA Only_Date
 mensajes_por_dia <- clean_data %>%
