@@ -1,6 +1,11 @@
 # README
 
-Juan Calvo, Jara Martínez y Jara Montes 2024-06-02
+---
+title: "README"
+author: "Juan Calvo, Julia Martínez y Jara Montes"
+date: "2024-06-02"
+output: github_document
+---
 
 # Análisis de Sentimientos y Tendencias en el Foro Forocoches sobre el Festival de Eurovisión 2024
 
