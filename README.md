@@ -43,27 +43,27 @@ Se han realizado los siguientes análisis utilizando diferentes scripts en R par
 
 Este script crea la base de datos a partir de los foros de Forocoches sobre Eurovisión 2024. Utiliza web scraping para extraer los comentarios y nombres de usuario del hilo HILO OFICIAL EUROVISIÓN 2024 (Malmö, Suecia)”, y luego crea una base de datos que se usará para el análisis subsiguiente.
 
-### ~**GraficosDIAS.R**~ {#graficosdiasr}
+### **GraficosDIAS.R** {#graficosdiasr}
 
 Genera un gráfico de la cantidad de mensajes enviados según el día, desde el día 8 hasta el 14 de mayo. Utiliza ggplot2 para la visualización de los datos, mostrando los picos de actividad diaria en el foro.
 
-### ~**GraficoHORAS.R**~ {#graficohorasr}
+### **GraficoHORAS.R** {#graficohorasr}
 
 Crea un gráfico que muestra la cantidad de mensajes enviados según la hora del día. Esto ayuda a identificar los momentos de mayor actividad en el foro durante cada día del período analizado.
 
-### ~**diccionarioGrande.R**~ {#diccionariogrander}
+### **diccionarioGrande.R** {#diccionariogrander}
 
 Este script define un diccionario categorizado a partir del análisis visual de los foros. Las categorías incluyen Insultos, Sexualización No Insulto, Sexualización Insulto, Homofobia, Bodyshaming, Política y Desprecio General. Cada categoría contiene una lista de palabras relevantes que se buscarán en los mensajes.
 
-### ~**GraficoCATEGORIAS.R**~ {#graficocategoriasr}
+### **GraficoCATEGORIAS.R** {#graficocategoriasr}
 
 Genera un gráfico que muestra la cantidad de palabras detectadas en cada categoría definida en el diccionario del script diccionarioGrande.R. Este gráfico ayuda a visualizar la frecuencia de uso de términos específicos dentro de cada categoría.
 
-### ~**GraficosCategoriasDesglosado.R**~ {#graficoscategoriasdesglosador}
+### **GraficosCategoriasDesglosado.R** {#graficoscategoriasdesglosador}
 
 Crea siete gráficos, uno por cada categoría del diccionario, mostrando las cinco palabras más utilizadas en cada una. Esto proporciona una vista detallada de los términos más frecuentes en cada categoría de interés.
 
-### ~**AnalisisSentimientos.R**~ {#analisissentimientosr}
+### **AnalisisSentimientos.R** {#analisissentimientosr}
 
 Realiza un análisis de sentimientos de todos los mensajes en el foro. Utiliza el paquete syuzhet para evaluar cuantitativamente las emociones expresadas en los comentarios. Además, genera tres nubes de palabras: una con todas las palabras importantes, otra con palabras relacionadas con mensajes negativos y otra más con palabras relacionadas con mensajes positivos.
 
