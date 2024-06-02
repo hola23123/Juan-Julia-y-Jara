@@ -39,7 +39,7 @@ git clone <https://github.com/hola23123/Juan-Julia-y-Jara.git> cd Juan-Julia-Jar
 
 Se han realizado los siguientes análisis utilizando diferentes scripts en R para obtener una comprensión profunda de los datos y visualizaciones del foro Forocoches respecto al Festival de Eurovisión 2024. A continuación se describe cada script y su propósito:
 
-### ~**CODIGO_FINAL_EUROVISION.R**~ {#codigo_final_eurovisionr}
+### **CODIGO_FINAL_EUROVISION.R** {#codigo_final_eurovisionr}
 
 Este script crea la base de datos a partir de los foros de Forocoches sobre Eurovisión 2024. Utiliza web scraping para extraer los comentarios y nombres de usuario del hilo HILO OFICIAL EUROVISIÓN 2024 (Malmö, Suecia)”, y luego crea una base de datos que se usará para el análisis subsiguiente.
 
